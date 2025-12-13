@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - FocusGuard Chrome Extension</title>
+    <style>
+        :root {
+            --primary: #ef4444;
+            --primary-dark: #dc2626;
+            --text: #1e293b;
+            --text-light: #64748b;
+            --bg: #ffffff;
+            --bg-alt: #fef2f2;
+            --border: #e2e8f0;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text);
+            background: var(--bg);
+        }
+        
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        
+        header {
+            text-align: center;
+            padding: 2rem 0 3rem;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 2rem;
+        }
+        
+        .logo {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, #ef4444, #f97316);
+            border-radius: 16px;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .logo svg {
+            width: 32px;
+            height: 32px;
+            fill: none;
+            stroke: white;
+            stroke-width: 2;
+        }
+        
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .updated {
+            color: var(--text-light);
+            font-size: 0.875rem;
+        }
+        
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem;
+            color: var(--primary);
+        }
+        
+        h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin: 1.5rem 0 0.75rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+        
+        ul, ol {
+            margin: 0 0 1rem 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .highlight {
+            background: var(--bg-alt);
+            padding: 1rem 1.25rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+            margin: 1rem 0;
+        }
+        
+        .highlight p {
+            margin: 0;
+        }
+        
+        strong {
+            font-weight: 600;
+        }
+        
+        code {
+            background: #f1f5f9;
+            padding: 0.125rem 0.375rem;
+            border-radius: 4px;
+            font-size: 0.875em;
+        }
+        
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--text-light);
+            font-size: 0.875rem;
+        }
+        
+        @media (max-width: 640px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" stroke-width="2"/>
+                    <polyline points="12 6 12 12 16 14" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <h1>Privacy Policy</h1>
+            <p class="updated">FocusGuard Chrome Extension &bull; Last Updated: December 2025</p>
+        </header>
+        
+        <main>
+            <h2>Overview</h2>
+            <p>FocusGuard ("the Extension") is a Chrome browser extension that helps you stay productive with Pomodoro-style focus sessions and break reminders. This Privacy Policy explains how we handle your data.</p>
+            
+            <div class="highlight">
+                <p><strong>Key Point:</strong> All your data is stored locally on your device. We never collect, transmit, or have access to your timer data, statistics, or any personal information.</p>
+            </div>
+            
+            <h2>Data Collection and Storage</h2>
+            
+            <h3>What Data We Store</h3>
+            <p>The Extension stores the following information <strong>locally on your device</strong>:</p>
+            <ul>
+                <li>Timer settings (focus duration, break duration, etc.)</li>
+                <li>Session statistics (number of completed sessions, total focus time)</li>
+                <li>Theme preferences (light/dark/system)</li>
+                <li>Notification preferences</li>
+            </ul>
+            
+            <h3>How Data is Stored</h3>
+            <p><strong>All data is stored locally on your device</strong> using Chrome's built-in storage API (<code>chrome.storage.local</code>). Your data:</p>
+            <ul>
+                <li>Never leaves your browser</li>
+                <li>Is not sent to any external servers</li>
+                <li>Is not shared with any third parties</li>
+                <li>Is not accessible to us or anyone else</li>
+            </ul>
+            
+            <h3>Data You Control</h3>
+            <p>You have complete control over your data:</p>
+            <ul>
+                <li>View your statistics in the Extension popup</li>
+                <li>Adjust all settings at any time</li>
+                <li>Uninstalling the extension removes all stored data</li>
+            </ul>
+            
+            <h2>Permissions We Request</h2>
+            <p>The Extension requests the following permissions:</p>
+            <ol>
+                <li><strong>storage</strong>: To save your timer settings and statistics locally</li>
+                <li><strong>alarms</strong>: To run the timer countdown accurately in the background</li>
+                <li><strong>notifications</strong>: To alert you when focus sessions or breaks are complete</li>
+            </ol>
+            
+            <h2>Data Sharing</h2>
+            <p>We do <strong>NOT</strong>:</p>
+            <ul>
+                <li>Collect any analytics or usage data</li>
+                <li>Send any data to external servers</li>
+                <li>Share your data with third parties</li>
+                <li>Track your browsing activity</li>
+                <li>Access any websites you visit</li>
+            </ul>
+            
+            <h2>Third-Party Services</h2>
+            <p>The free version of FocusGuard does not use any third-party services.</p>
+            <p>The Pro version uses Stripe (via ExtensionPay) for secure payment processing. Stripe's privacy policy applies to payment data: <a href="https://stripe.com/privacy" target="_blank" rel="noopener">stripe.com/privacy</a></p>
+            
+            <h2>Children's Privacy</h2>
+            <p>FocusGuard is suitable for users of all ages. We do not collect any personal data from any users, including children.</p>
+            
+            <h2>Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. We will notify users of any material changes by updating the "Last Updated" date at the top of this page.</p>
+            
+            <h2>Your Rights</h2>
+            <p>Since all data is stored locally on your device and we have no access to it, you can exercise all data rights directly through the Extension's interface or by uninstalling the extension.</p>
+            
+            <h2>Contact</h2>
+            <p>If you have questions about this Privacy Policy, please contact us at:</p>
+            <p><strong>Email:</strong> <a href="mailto:benthepythondev0@gmail.com">benthepythondev0@gmail.com</a></p>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 FocusGuard. All rights reserved.</p>
+            <p><a href="https://github.com/benthepythondev00/focusguard-extension">View on GitHub</a></p>
+        </footer>
+    </div>
+</body>
+</html>
