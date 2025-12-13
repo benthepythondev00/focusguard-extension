@@ -1,7 +1,7 @@
 import ExtPay from 'extpay';
 
 // Initialize ExtPay with your extension ID (register at extensionpay.com)
-const extpay = ExtPay('focusguard');
+const extpay = ExtPay('focusguard-timer');
 
 export interface UserPaymentStatus {
   paid: boolean;
